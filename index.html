@@ -6,46 +6,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- HOME -->
-<section id="home" class="page">
-  <p id="typingText" class="typing">Hello! welcome to muzascript website</p>
+<!-- INTRO -->
+<div class="intro" id="intro">
+  <div class="typing" id="typingText"></div>
 
-  <div class="buttons">
-    <a href="#about">About</a>
-    <a href="#social">Social</a>
+  <div class="intro-buttons hidden" id="introButtons">
+    <button onclick="goAbout()">About</button>
+    <button onclick="goSocial()">Social</button>
   </div>
 
-  <div id="about" class="box">
-    <p>
-      MuzaScript is a Roblox script development project from Indonesia.<br>
-      Focused on Roblox scripts and script showcase.
-    </p>
-    <p>
-      thanks for reading, and nice to meet you :)
-    </p>
+  <div class="intro-buttons hidden" id="infoButtons">
+    <button onclick="goInformation()">Information</button>
   </div>
+
+  <div class="intro-buttons hidden" id="socialButtons">
+    <button onclick="showSocial()">Social Media</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <h1>MUZASCRIPT</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#social">Social</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+    <h2>MUZASCRIPT INFORMATION</h2>
+    <p class="tagline">
+      Roblox Script Developer<br>
+      <span style="font-size:14px; color:#aaa;">
+        MuzaScript Official Information Page
+      </span>
+    </p>
+
+    <div class="hero-buttons">
+      <button onclick="scrollToSection('about')">Information</button>
+      <a href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
+      <a href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h3>About MuzaScript</h3>
+  <p>
+    MuzaScript is a Roblox script development project originating from Indonesia. It focuses on creating Roblox Scripts and Script Showcases.
+  </p>
 </section>
 
-<!-- SOCIAL PAGE -->
-<section id="social" class="page">
-  <h2>MuzaScript Social Media</h2>
+<!-- SOCIAL -->
+<section id="social" class="section">
+  <h3>Community & Media</h3>
 
-  <div class="buttons">
-    <a href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
-    <a href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
-    <a href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
-  </div>
-
-  <div class="buttons">
-    <a href="#home">← Back</a>
+  <div class="social-grid">
+    <a class="social-card" href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
+    <a class="social-card" href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
+    <a class="social-card" href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
   </div>
 </section>
 
 <footer>
-  © 2026 MuzaScript • Roblox Scripter / Script Showcaser 
+  <p>© 2026 MuzaScript • Roblox Scripter & Script Showcase</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
