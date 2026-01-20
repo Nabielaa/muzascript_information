@@ -1,66 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>MuzaScript</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!-- INTRO SCREEN -->
+<div id="intro" class="intro">
+  <div id="typingText" class="typing"></div>
 
-<!-- INTRO -->
-<div class="intro" id="intro">
-  <div class="typing" id="typingText"></div>
-
-  <div class="intro-buttons hidden" id="introButtons">
+  <div id="introButtons" class="intro-buttons hidden">
     <button onclick="goAbout()">About</button>
+    <button onclick="goSocial()">Social</button>
   </div>
 
-  <div class="intro-buttons hidden" id="infoButtons">
+  <div id="infoButtons" class="intro-buttons hidden">
     <button onclick="goInformation()">Information</button>
   </div>
 
-  <div class="intro-buttons hidden" id="socialButtons">
-    <button onclick="showSocial()">Social Media</button>
+  <div id="socialButtons" class="intro-buttons hidden">
+    <button onclick="showSocial()">Social</button>
   </div>
 </div>
-
-<!-- MAIN CONTENT -->
-<nav id="mainNav">
-  <h1>MUZASCRIPT</h1>
-</nav>
-
-<header class="hero">
-  <div class="hero-content">
-    <h2>MUZASCRIPT INFORMATION</h2>
-    <p class="tagline">
-      Roblox Script Developer<br>
-      <span>MuzaScript Official Information Page</span>
-    </p>
-  </div>
-</header>
-
-<section id="about" class="section">
-  <h3>About MuzaScript</h3>
-  <p>
-    MuzaScript adalah project pengembangan script Roblox dari Indonesia
-    yang berfokus pada Roblox Script & Script Showcase.
-  </p>
-</section>
-
-<section id="social" class="section">
-  <h3>Community & Media</h3>
-  <div class="social-grid">
-    <a class="social-card" href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
-    <a class="social-card" href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
-    <a class="social-card" href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
-  </div>
-</section>
-
-<footer>
-  © 2026 MuzaScript • Roblox Scripter & Script Showcase
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
