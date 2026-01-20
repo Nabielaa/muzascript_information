@@ -3,50 +3,71 @@ body {
   font-family: system-ui, sans-serif;
   background: radial-gradient(circle at top, #1a1a2e, #050505);
   color: white;
-  text-align: center;
-}
-
-.intro {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
 }
 
+/* PAGE SYSTEM */
+.page {
+  display: none;
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+.page.active {
+  display: block;
+}
+
+/* INTRO TEXT */
 .typing {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
+/* BUTTONS */
 .buttons {
   margin: 20px 0;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-button {
+button, a {
   padding: 12px 22px;
-  margin: 6px;
   background: #111;
   border: 1px solid #333;
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-button:hover {
+button:hover, a:hover {
   box-shadow: 0 0 12px rgba(143,91,255,0.6);
 }
 
+/* ABOUT BOX */
 .box {
   display: none;
   margin-top: 20px;
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.social a {
-  display: block;
-  margin: 10px 0;
-  color: white;
-  text-decoration: none;
+/* BACK BUTTON */
+.back {
+  margin-top: 30px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  opacity: 0.6;
+  border-top: 1px solid #222;
 }
