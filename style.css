@@ -283,3 +283,29 @@ a {
   font-size: 13px !important;
   color: #aaa !important;
 }
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px 20px;
+  border-radius: 22px;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 60px rgba(143,91,255,0.25);
+}
+
+/* fade animation */
+.fade {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
