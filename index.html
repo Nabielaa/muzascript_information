@@ -1,120 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>MuzaScript</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
 <!-- INTRO -->
 <div class="intro" id="intro">
+
   <div class="typing" id="typingText"></div>
 
-  <!-- GHOST MESSAGE -->
-<div class="ghost-message hidden" id="ghostMessage">
-  <p class="ghost-text">i miss my friend Ghosthub / Ghostplayer</p>
-
-  <!-- GHOST PICTURE SECTION -->
-<div class="ghost-message hidden" id="ghostMessage">
-
-  <p class="ghost-text">I miss my friend GhostHub / Ghostplayer</p>
-
-  <div class="intro-buttons">
-    <button onclick="showPic(1)">Check Picture 1</button>
-    <button onclick="showPic(2)">Check Picture 2</button>
-  </div>
-
-  <div class="ghost-images">
-    <img id="pic1" src="images/muza-ghost1.jpg" class="hidden">
-    <img id="pic2" src="images/muza-ghost2.jpg" class="hidden">
-  </div>
-
-</div>
-
-  <div class="intro-buttons">
-    <button onclick="showPic(1)">Click Picture 1</button>
-    <button onclick="showPic(2)">Click Picture 2</button>
-  </div>
-
-  <div class="ghost-images">
-    <img id="pic1" src="images/muza-ghost-1.jpg" alt="Muza & Ghost 1">
-    <img id="pic2" src="images/muza-ghost-2.jpg" alt="Muza & Ghost 2">
-  </div>
-</div>
-
+  <!-- STEP 1 BUTTON -->
   <div class="intro-buttons hidden" id="introButtons">
     <button onclick="goAbout()">About</button>
     <button onclick="goSocial()">Social</button>
   </div>
 
+  <!-- STEP 2 BUTTON -->
   <div class="intro-buttons hidden" id="infoButtons">
     <button onclick="goInformation()">Information</button>
   </div>
 
+  <!-- STEP 3 GHOST MESSAGE + IMAGE -->
+  <div class="ghost-message hidden" id="ghostMessage">
+    <p class="ghost-text">I miss my friend GhostHub / Ghostplayer</p>
+
+    <div class="intro-buttons">
+      <button onclick="showPic(1)">Check Picture 1</button>
+      <button onclick="showPic(2)">Check Picture 2</button>
+    </div>
+
+    <div class="ghost-images">
+      <img id="pic1" src="images/muza-ghost1.jpg" class="hidden">
+      <img id="pic2" src="images/muza-ghost2.jpg" class="hidden">
+    </div>
+  </div>
+
+  <!-- STEP 4 SOCIAL -->
   <div class="intro-buttons hidden" id="socialButtons">
     <button onclick="showSocial()">Social Media</button>
   </div>
+
 </div>
-
-<!-- NAV -->
-<nav>
-  <h1>MUZASCRIPT</h1>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#social">Social</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-content">
-    <h2>MUZASCRIPT INFORMATION</h2>
-    <p class="tagline">
-      Roblox Script Developer<br>
-      <span style="font-size:14px; color:#aaa;">
-        MuzaScript Official Information Page
-      </span>
-    </p>
-
-    <div class="hero-buttons">
-      <button onclick="scrollToSection('about')">Information</button>
-      <a href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
-      <a href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
-    </div>
-  </div>
-</header>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h3>About MuzaScript</h3>
-  <p>
-    MuzaScript is a Roblox script development project originating from Indonesia,
-focused on creating Roblox scripts and script showcases.
-  </p>
-
-  <p2>follow my social media Youtube,Tiktok, and join to discord!</p2>
-  
-</section>
-
-<!-- SOCIAL -->
-<section id="social" class="section">
-  <h3>Community & Media</h3>
-
-  <div class="social-grid">
-    <a class="social-card" href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
-    <a class="social-card" href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
-    <a class="social-card" href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 MuzaScript • Roblox Scripter / Script Showcaser</p>
-</footer>
-
-<script src="script.js?v=2"></script>
-</body>
-</html>
