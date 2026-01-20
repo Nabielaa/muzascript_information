@@ -8,13 +8,13 @@
 </head>
 <body>
 
-<!-- PAGE 1 : INTRO -->
-<section id="home" class="page active">
+<!-- PAGE 1 -->
+<div id="page1" class="page show">
   <p id="typingText" class="typing"></p>
 
   <div class="buttons">
     <button onclick="showAbout()">About</button>
-    <button onclick="goSocial()">Social</button>
+    <button onclick="goToSocial()">Social</button>
   </div>
 
   <div id="about" class="box">
@@ -23,27 +23,26 @@
       Focused on Roblox scripts and script showcase.
     </p>
     <p>
-      thanks for reading, and nice to meet you :),
+      I miss my friend GhostHub / Ghostplayer.
     </p>
   </div>
-</section>
+</div>
 
-<!-- PAGE 2 : SOCIAL -->
-<section id="socialPage" class="page">
+<!-- PAGE 2 -->
+<div id="page2" class="page">
   <h2>MuzaScript Social Media</h2>
 
   <div class="buttons">
-    <a href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
-    <a href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
-    <a href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
+    <a class="btn" href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
+    <a class="btn" href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
+    <a class="btn" href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
   </div>
 
-  <button class="back" onclick="goHome()">← Back</button>
-</section>
+  <button class="back" onclick="goBack()">← Back</button>
+</div>
 
-<!-- FOOTER (SELALU ADA) -->
 <footer>
-  © 2026 muzascript Roblox Scripter / Script Showcaser • Roblox muzascript developer
+  © 2026 MuzaScript • Roblox Script Developer
 </footer>
 
 <script src="script.js"></script>
