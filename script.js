@@ -11,19 +11,18 @@ function typeText() {
     setTimeout(typeText, speed);
   }
 }
-
 typeText();
 
 function showAbout() {
   document.getElementById("about").style.display = "block";
 }
 
-function goSocial() {
-  document.getElementById("home").classList.remove("active");
-  document.getElementById("socialPage").classList.add("active");
+function goToSocial() {
+  document.getElementById("page1").classList.remove("show");
+  document.getElementById("page2").classList.add("show");
 }
 
-function goHome() {
-  document.getElementById("socialPage").classList.remove("active");
-  document.getElementById("home").classList.add("active");
+function goBack() {
+  document.getElementById("page2").classList.remove("show");
+  document.getElementById("page1").classList.add("show");
 }
