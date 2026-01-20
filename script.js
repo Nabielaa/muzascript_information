@@ -31,7 +31,7 @@ typeText(
 function goAbout() {
   introButtons.classList.add("hidden");
   typeText(
-    "Hii? do u know about muzascript?\nHere click this button",
+    "Hii? Interested in learning more about MuzaScript?\nHere click this button",
     () => infoButtons.classList.remove("hidden")
   );
 }
@@ -40,15 +40,13 @@ function goAbout() {
 function goInformation() {
   infoButtons.classList.add("hidden");
   typeText(
-`About MuzaScript
+`muzascript information 
 
-MuzaScript adalah project pengembangan script Roblox dari Indonesia.
-Berfokus pada Roblox Script & Script Showcase.
-
-MuzaScript menyediakan forum Discord dan menerima request script gratis.
-
+MuzaScript is a Roblox script development project from Indonesia.
+It focuses on Roblox scripts and script showcases.
+MuzaScript provides a Discord forum and accepts free script requests.
 Muza:
-"hahahhaa i miss you ghost..."
+"I miss my friend, GhostHub/Ghostplayer"
 
 Hey do u wanna know muzascript social media?`,
     () => socialButtons.classList.remove("hidden")
