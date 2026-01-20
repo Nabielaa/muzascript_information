@@ -69,3 +69,12 @@ function showSocial() {
 
   document.getElementById("social").scrollIntoView({ behavior: "smooth" });
 }
+
+    function showMainContent() {
+  document.querySelector(".intro").style.display = "none";
+
+  document.querySelector("nav").style.display = "block";
+  document.querySelector("header").style.display = "block";
+  document.querySelectorAll("section").forEach(s => s.style.display = "block");
+  document.querySelector("footer").style.display = "block";
+    }
