@@ -29,7 +29,7 @@ typeText(
 function goAbout() {
   introButtons.classList.add("hidden");
   typeText(
-    "Hii? do u know about muzascript?\nHere click this button",
+    "Hii? let me introduce myself, I am Muzascript \nHere click this button for more information about muzascript",
     () => infoButtons.classList.remove("hidden")
   );
 }
@@ -41,20 +41,9 @@ function goInformation() {
   typeText(
 `About MuzaScript
 
-MuzaScript adalah project pengembangan script Roblox yang berasal dari indonesia dan berfokus pada pembuatan Roblox Script & Script Showcaser.
-
-Tujuan muzascript menjadi bagian scripter Roblox adalah membuat player merasa lebih asik dan nyaman bermain menggunakan script dan mempermudah permainan bagi User Delta dan sebagainya.
-
-MuzaScript menyediakan forum discord untuk berdiskusi dan menerima request script gratis dari user.
-
-Namun muzascript hanyalah scripter pemula dan hanya sanggup memenuhi request jika map tersebut mudah ditembus :)
-
-MuzaScript juga berteman dengan scripter terkenal ghosthub sejak 2022.
-
-Muza:
-"hahahhaa i miss you ghost, if you read this i just want you to know that i miss you and thank you..."
-
-Hey do u wanna know muzascript social media?`,
+Muzascript is a Roblox Scripter/Script Showcaser. Inspired by the famous scripter
+Ghosthub/Ghostplayer. Muzascript is a scripter that attempts to learn the Lua-based
+Roblox system language.`,
     () => socialButtons.classList.remove("hidden")
   );
 }
