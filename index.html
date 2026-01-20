@@ -8,12 +8,13 @@
 </head>
 <body>
 
-<div class="intro">
+<!-- PAGE 1 : INTRO -->
+<section id="home" class="page active">
   <p id="typingText" class="typing"></p>
 
   <div class="buttons">
     <button onclick="showAbout()">About</button>
-    <button onclick="showSocial()">Social</button>
+    <button onclick="goSocial()">Social</button>
   </div>
 
   <div id="about" class="box">
@@ -22,17 +23,28 @@
       Focused on Roblox scripts and script showcase.
     </p>
     <p>
-      Thank you for reading, and nice to meet you :)
+      thanks for reading, and nice to meet you :),
     </p>
   </div>
-</div>
+</section>
 
-<div id="social" class="box social">
-  <h3>Social Media</h3>
-  <a href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
-  <a href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
-  <a href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
-</div>
+<!-- PAGE 2 : SOCIAL -->
+<section id="socialPage" class="page">
+  <h2>MuzaScript Social Media</h2>
+
+  <div class="buttons">
+    <a href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
+    <a href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
+  </div>
+
+  <button class="back" onclick="goHome()">← Back</button>
+</section>
+
+<!-- FOOTER (SELALU ADA) -->
+<footer>
+  © 2026 muzascript Roblox Scripter / Script Showcaser • Roblox muzascript developer
+</footer>
 
 <script src="script.js"></script>
 </body>
