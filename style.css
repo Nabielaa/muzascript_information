@@ -309,3 +309,7 @@ a {
     transform: translateY(0);
   }
 }
+
+.btn {
+  letter-spacing: 0.5px;
+}
