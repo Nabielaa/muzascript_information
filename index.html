@@ -6,20 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<nav>
-  <h1>MUZASCRIPT</h1>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#social">Social</a></li>
-  </ul>
-</nav>
-
-<!-- INTRO SCREEN -->
 
 <body>
 
+<!-- INTRO -->
 <div class="intro">
   <div class="typing" id="typingText"></div>
 
@@ -29,38 +19,25 @@
   </div>
 </div>
 
-<nav>...</nav>
+<!-- NAV -->
+<nav>
+  <h1>MUZASCRIPT</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#social">Social</a></li>
+  </ul>
+</nav>
 
-<header class="hero">
-  ...
-</header>
-
-<section id="about">...</section>
-<section id="social">...</section>
-
-</body>
-  
-<div id="intro" class="intro">
-  <div id="typingText" class="typing"></div>
-  
-  <div id="infoButtons" class="intro-buttons hidden">
-    <button onclick="goInformation()">Information</button>
-  </div>
-
-  <div id="socialButtons" class="intro-buttons hidden">
-    <button onclick="showSocial()">Social</button>
-  </div>
-</div>
-  
+<!-- HERO -->
 <header class="hero">
   <div class="hero-content fade">
     <h2>MUZASCRIPT INFORMATION</h2>
     <p class="tagline">
-  Roblox Script Developer<br>
-  <span style="font-size:14px; color:#aaa;">
-    MuzaScript Official Information Page
-  </span>
-</p>
+      Roblox Script Developer<br>
+      <span style="font-size:14px; color:#aaa;">
+        MuzaScript Official Information Page
+      </span>
+    </p>
 
     <div class="hero-buttons">
       <button onclick="scrollToSection('about')">Information</button>
@@ -71,11 +48,21 @@
   </div>
 </header>
 
+<!-- ABOUT -->
+<section id="about" class="section fade">
+  <h3>About MuzaScript</h3>
+  <p>
+    MuzaScript adalah project pengembangan script Roblox
+    yang berasal dari Indonesia dan berfokus pada pembuatan
+    Roblox Script & Script Showcase.
+  </p>
+</section>
+
+<!-- SOCIAL -->
 <section id="social" class="section fade">
   <h3>Community & Media</h3>
 
   <div class="social-grid">
-
     <a class="social-card discord" href="https://discord.gg/5BQPManKu" target="_blank">
       <span class="icon">💬</span>
       <div>
@@ -96,10 +83,9 @@
       <span class="icon">🎵</span>
       <div>
         <h4>TikTok</h4>
-        <p>upload first video script in tiktok!</p>
+        <p>Upload first video script in TikTok!</p>
       </div>
     </a>
-
   </div>
 </section>
 
