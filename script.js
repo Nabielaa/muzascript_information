@@ -31,7 +31,7 @@ typeText(
 function goAbout() {
   introButtons.classList.add("hidden");
   typeText(
-    "Hii? Interested in learning more about MuzaScript?\nHere click this button",
+    "Hii? Interested in learning more about MuzaScript??\nHere click this button",
     () => infoButtons.classList.remove("hidden")
   );
 }
