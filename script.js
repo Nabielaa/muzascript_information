@@ -21,13 +21,13 @@ function typeText(text, callback) {
   }, speed);
 }
 
-/* STEP 1 – INTRO */
+/* STEP 1 */
 typeText(
   "Hello! welcome to muzascript website",
   () => introButtons.classList.remove("hidden")
 );
 
-/* STEP 2 – ABOUT */
+/* STEP 2 */
 function goAbout() {
   introButtons.classList.add("hidden");
 
@@ -37,7 +37,7 @@ function goAbout() {
   );
 }
 
-/* STEP 3 – INFORMATION */
+/* STEP 3 */
 function goInformation() {
   infoButtons.classList.add("hidden");
 
@@ -47,13 +47,11 @@ function goInformation() {
 MuzaScript is a Roblox script development project from Indonesia.
 It focuses on Roblox scripts and script showcases.
 MuzaScript provides a Discord forum and accepts free script requests.`,
-    () => {
-      ghostMessage.classList.remove("hidden");
-    }
+    () => ghostMessage.classList.remove("hidden")
   );
 }
 
-/* STEP 4 – SHOW PICTURES */
+/* SHOW IMAGE */
 function showPic(num) {
   document.getElementById("pic1").classList.add("hidden");
   document.getElementById("pic2").classList.add("hidden");
@@ -65,7 +63,7 @@ function showPic(num) {
   }
 }
 
-/* STEP 5 – SOCIAL */
+/* FINAL */
 function showSocial() {
   intro.style.display = "none";
 
@@ -77,7 +75,7 @@ function showSocial() {
   document.getElementById("social").scrollIntoView({ behavior: "smooth" });
 }
 
-/* HELPER */
+/* helper */
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
