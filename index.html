@@ -10,13 +10,22 @@
 <body>
 
 <!-- INTRO -->
-<div class="intro">
+<div class="intro" id="intro">
   <div class="typing" id="typingText"></div>
 
   <div class="intro-buttons hidden" id="introButtons">
-  <button onclick="showMainContent()">About</button>
-  <button onclick="showMainContent()">Social</button>
+    <button onclick="goAbout()">About</button>
+    <button onclick="goSocial()">Social</button>
   </div>
+
+  <div class="intro-buttons hidden" id="infoButtons">
+    <button onclick="goInformation()">Information</button>
+  </div>
+
+  <div class="intro-buttons hidden" id="socialButtons">
+    <button onclick="showSocial()">Social Media</button>
+  </div>
+</div>
 
 <!-- NAV -->
 <nav>
@@ -29,7 +38,7 @@
 
 <!-- HERO -->
 <header class="hero">
-  <div class="hero-content fade">
+  <div class="hero-content">
     <h2>MUZASCRIPT INFORMATION</h2>
     <p class="tagline">
       Roblox Script Developer<br>
@@ -40,51 +49,30 @@
 
     <div class="hero-buttons">
       <button onclick="scrollToSection('about')">Information</button>
-      <a class="btn discord" href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
-      <a class="btn youtube" href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
-      <a class="btn tiktok" href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
+      <a href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
+      <a href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
     </div>
   </div>
 </header>
 
 <!-- ABOUT -->
-<section id="about" class="section fade">
+<section id="about" class="section">
   <h3>About MuzaScript</h3>
   <p>
-    MuzaScript adalah project pengembangan script Roblox
-    yang berasal dari Indonesia dan berfokus pada pembuatan
-    Roblox Script & Script Showcase.
+    MuzaScript adalah project pengembangan script Roblox yang berasal dari Indonesia
+    dan berfokus pada pembuatan Roblox Script & Script Showcase.
   </p>
 </section>
 
 <!-- SOCIAL -->
-<section id="social" class="section fade">
+<section id="social" class="section">
   <h3>Community & Media</h3>
 
   <div class="social-grid">
-    <a class="social-card discord" href="https://discord.gg/5BQPManKu" target="_blank">
-      <span class="icon">💬</span>
-      <div>
-        <h4>Discord</h4>
-        <p>Join the community</p>
-      </div>
-    </a>
-
-    <a class="social-card youtube" href="https://www.youtube.com/@muzascriptroblox" target="_blank">
-      <span class="icon">▶️</span>
-      <div>
-        <h4>YouTube</h4>
-        <p>Roblox Scripter / Script Showcaser</p>
-      </div>
-    </a>
-
-    <a class="social-card tiktok" href="https://www.tiktok.com/@bluearmy_82" target="_blank">
-      <span class="icon">🎵</span>
-      <div>
-        <h4>TikTok</h4>
-        <p>Upload first video script in TikTok!</p>
-      </div>
-    </a>
+    <a class="social-card" href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
+    <a class="social-card" href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
+    <a class="social-card" href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
   </div>
 </section>
 
