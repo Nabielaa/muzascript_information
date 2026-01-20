@@ -2,7 +2,7 @@ const typingText = document.getElementById("typingText");
 const introButtons = document.getElementById("introButtons");
 const infoButtons = document.getElementById("infoButtons");
 const socialButtons = document.getElementById("socialButtons");
-
+const ghostMessage = document.getElementById("ghostMessage");
 const intro = document.getElementById("intro");
 
 let speed = 30;
@@ -21,45 +21,51 @@ function typeText(text, callback) {
   }, speed);
 }
 
-/* STEP 1 */
+/* STEP 1 – INTRO */
 typeText(
   "Hello! welcome to muzascript website",
   () => introButtons.classList.remove("hidden")
 );
 
-/* STEP 2 */
+/* STEP 2 – ABOUT */
 function goAbout() {
   introButtons.classList.add("hidden");
+
   typeText(
-    "Hii? Interested in learning more about MuzaScript??\nHere click this button",
+    "Hii? Interested in learning more about MuzaScript?\nClick the button below",
     () => infoButtons.classList.remove("hidden")
   );
 }
 
-/* STEP 3 */
+/* STEP 3 – INFORMATION */
 function goInformation() {
   infoButtons.classList.add("hidden");
+
   typeText(
-`muzascript information 
+`MuzaScript Information
 
 MuzaScript is a Roblox script development project from Indonesia.
 It focuses on Roblox scripts and script showcases.
-MuzaScript provides a Discord forum and accepts free script requests.
-Muza:
-"I miss my friend, GhostHub/Ghostplayer"
-
-Hey do u wanna know muzascript social media?`,
-    () => socialButtons.classList.remove("hidden")
+MuzaScript provides a Discord forum and accepts free script requests.`,
+    () => {
+      ghostMessage.classList.remove("hidden");
+    }
   );
 }
 
-/* STEP 4 */
-function goSocial() {
-  introButtons.classList.add("hidden");
-  socialButtons.classList.remove("hidden");
+/* STEP 4 – SHOW PICTURES */
+function showPic(num) {
+  document.getElementById("pic1").classList.add("hidden");
+  document.getElementById("pic2").classList.add("hidden");
+
+  if (num === 1) {
+    document.getElementById("pic1").classList.remove("hidden");
+  } else {
+    document.getElementById("pic2").classList.remove("hidden");
+  }
 }
 
-/* FINAL */
+/* STEP 5 – SOCIAL */
 function showSocial() {
   intro.style.display = "none";
 
@@ -71,7 +77,7 @@ function showSocial() {
   document.getElementById("social").scrollIntoView({ behavior: "smooth" });
 }
 
-/* scroll helper */
+/* HELPER */
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
