@@ -50,10 +50,3 @@ button:hover {
   color: white;
   text-decoration: none;
 }
-
-.about-img {
-  max-width: 90%;
-  margin-top: 15px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(143,91,255,0.4);
-}
