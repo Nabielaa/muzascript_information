@@ -18,6 +18,12 @@ function showAbout() {
   document.getElementById("about").style.display = "block";
 }
 
-function showSocial() {
-  document.getElementById("social").style.display = "block";
+function goSocial() {
+  document.getElementById("home").classList.remove("active");
+  document.getElementById("socialPage").classList.add("active");
+}
+
+function goHome() {
+  document.getElementById("socialPage").classList.remove("active");
+  document.getElementById("home").classList.add("active");
 }
