@@ -4,67 +4,50 @@
   <meta charset="UTF-8">
   <title>MuzaScript</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css?v=FINAL">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- INTRO -->
-<div class="intro" id="intro">
-  <div class="typing" id="typingText"></div>
+<div id="intro" class="intro">
+  <p id="typingText" class="typing"></p>
 
-  <div class="intro-buttons hidden" id="introButtons">
-    <button onclick="goAbout()">About</button>
+  <div id="btnAbout" class="buttons hidden">
+    <button onclick="showInfo()">About</button>
   </div>
 
-  <div class="intro-buttons hidden" id="infoButtons">
-    <button onclick="goInformation()">Information</button>
-  </div>
+  <div id="infoSection" class="hidden">
+    <p class="text">
+      MuzaScript is a Roblox script development project from Indonesia.
+    </p>
 
-  <!-- GHOST -->
-  <div class="ghost-section hidden" id="ghostSection">
-    <p class="ghost-text">I miss my friend GhostHub / Ghostplayer</p>
+    <p class="text">
+      I miss my friend GhostHub / Ghostplayer
+    </p>
 
-    <div class="intro-buttons">
-      <button onclick="showPic(1)">Check Picture 1</button>
-      <button onclick="showPic(2)">Check Picture 2</button>
+    <div class="buttons">
+      <button onclick="showPic(1)">Picture 1</button>
+      <button onclick="showPic(2)">Picture 2</button>
     </div>
 
-    <div class="ghost-images">
+    <div class="images">
       <img id="pic1" src="images/muza-ghost1.jpg" class="hidden">
       <img id="pic2" src="images/muza-ghost2.jpg" class="hidden">
     </div>
 
-    <div class="intro-buttons">
+    <div class="buttons">
       <button onclick="showSocial()">Social Media</button>
     </div>
   </div>
 </div>
 
-<!-- MAIN CONTENT -->
-<nav id="mainNav" class="hidden">
-  <h1>MUZASCRIPT</h1>
-</nav>
+<div id="social" class="hidden social">
+  <h2>MuzaScript Social Media</h2>
 
-<header class="hero hidden">
-  <div class="hero-content">
-    <h2>MUZASCRIPT INFORMATION</h2>
-    <p>
-      Roblox Script Developer<br>
-      <span>MuzaScript Official Information Page</span>
-    </p>
+  <a href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
+  <a href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
+  <a href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
+</div>
 
-    <div class="hero-buttons">
-      <a href="https://discord.gg/5BQPManKu" target="_blank">Discord</a>
-      <a href="https://www.youtube.com/@muzascriptroblox" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@bluearmy_82" target="_blank">TikTok</a>
-    </div>
-  </div>
-</header>
-
-<footer class="hidden">
-  <p>© 2026 MuzaScript • Roblox Scripter / Script Showcaser</p>
-</footer>
-
-<script src="./script.js?v=FINAL"></script>
+<script src="script.js"></script>
 </body>
 </html>
