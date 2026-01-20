@@ -62,11 +62,9 @@ MuzaScript provides a Discord forum`,
 
   // FINAL
   window.showSocial = () => {
-    intro.style.display = "none";
-    document.getElementById("mainNav").classList.remove("hidden");
-    document.querySelector(".hero").classList.remove("hidden");
-    document.querySelector("footer").classList.remove("hidden");
-  };
+  intro.style.display = "none";
 
-  window.goSocial = window.showSocial;
-});
+  document.getElementById("mainNav").classList.remove("hidden");
+  document.querySelector(".hero").classList.remove("hidden");
+  document.querySelector("footer").classList.remove("hidden");
+};
