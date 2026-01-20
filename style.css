@@ -1,71 +1,47 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #050505);
-  color: #fff;
-}
-
-.hidden {
-  display: none;
+  background: #0b0b15;
+  color: white;
 }
 
 .intro {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 40px;
   text-align: center;
-  padding: 30px;
-}
-
-.typing {
-  font-size: 18px;
-  margin-bottom: 20px;
 }
 
 .buttons {
-  margin-top: 15px;
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 button {
-  padding: 12px 22px;
+  padding: 12px 20px;
+  margin: 5px;
   background: #111;
-  border: 1px solid #222;
-  color: #fff;
-  border-radius: 14px;
-  cursor: pointer;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 8px;
 }
 
-button:hover {
-  box-shadow: 0 0 15px rgba(143,91,255,0.6);
+.box {
+  display: none;
 }
 
-.text {
-  margin-top: 15px;
-  max-width: 600px;
-}
-
-.images img {
+img {
   max-width: 90%;
   margin-top: 15px;
-  border-radius: 16px;
-  box-shadow: 0 0 25px rgba(143,91,255,0.4);
+  display: none;
+  border-radius: 12px;
 }
 
 .social {
-  min-height: 100vh;
+  display: none;
   padding: 40px;
   text-align: center;
 }
 
 .social a {
   display: block;
-  margin: 12px 0;
+  margin: 10px 0;
   color: white;
-  text-decoration: none;
 }
