@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function typeText(text, callback) {
     typingText.innerHTML = "";
     let i = 0;
+
     const interval = setInterval(() => {
       typingText.innerHTML += text.charAt(i);
       i++;
@@ -37,34 +38,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // STEP 3
   window.goInformation = () => {
-  infoButtons.classList.add("hidden");
+    infoButtons.classList.add("hidden");
 
-  typeText(
+    typeText(
 `MuzaScript is a Roblox script development project from Indonesia.
 It focuses on Roblox scripts and script showcases.
-MuzaScript provides a Discord forum`,
-    () => {
-      ghostSection.classList.remove("hidden"); // 🔥 INI KUNCI
-    }
-  );
-};
-  // STEP 4
+MuzaScript provides a Discord forum.`,
+      () => ghostSection.classList.remove("hidden")
+    );
+  };
+
+  // IMAGE
   window.showPic = (num) => {
     document.getElementById("pic1").classList.add("hidden");
     document.getElementById("pic2").classList.add("hidden");
 
-    if (num === 1) {
-      document.getElementById("pic1").classList.remove("hidden");
-    } else {
-      document.getElementById("pic2").classList.remove("hidden");
-    }
+    document.getElementById(
+      num === 1 ? "pic1" : "pic2"
+    ).classList.remove("hidden");
   };
 
-  // FINAL
+  // FINAL SOCIAL
   window.showSocial = () => {
-  intro.style.display = "none";
+    intro.style.display = "none";
 
-  document.getElementById("mainNav").classList.remove("hidden");
-  document.querySelector(".hero").classList.remove("hidden");
-  document.querySelector("footer").classList.remove("hidden");
-};
+    document.getElementById("mainNav").classList.remove("hidden");
+    document.querySelector(".hero").classList.remove("hidden");
+    document.querySelector("footer").classList.remove("hidden");
+  };
+});
