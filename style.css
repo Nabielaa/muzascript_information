@@ -1,13 +1,23 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: #0b0b15;
+  background: radial-gradient(circle at top, #1a1a2e, #050505);
   color: white;
+  text-align: center;
 }
 
 .intro {
-  padding: 40px;
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.typing {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .buttons {
@@ -15,33 +25,28 @@ body {
 }
 
 button {
-  padding: 12px 20px;
-  margin: 5px;
+  padding: 12px 22px;
+  margin: 6px;
   background: #111;
   border: 1px solid #333;
   color: white;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 12px rgba(143,91,255,0.6);
 }
 
 .box {
   display: none;
-}
-
-img {
-  max-width: 90%;
-  margin-top: 15px;
-  display: none;
-  border-radius: 12px;
-}
-
-.social {
-  display: none;
-  padding: 40px;
-  text-align: center;
+  margin-top: 20px;
+  max-width: 600px;
 }
 
 .social a {
   display: block;
   margin: 10px 0;
   color: white;
+  text-decoration: none;
 }
