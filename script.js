@@ -37,15 +37,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // STEP 3
   window.goInformation = () => {
-    infoButtons.classList.add("hidden");
-    typeText(
+  infoButtons.classList.add("hidden");
+
+  typeText(
 `MuzaScript is a Roblox script development project from Indonesia.
 It focuses on Roblox scripts and script showcases.
-MuzaScript provides a Discord forum and accepts free script requests.`,
-      () => ghostSection.classList.remove("hidden")
-    );
-  };
-
+MuzaScript provides a Discord forum`,
+    () => {
+      ghostSection.classList.remove("hidden"); // 🔥 INI KUNCI
+    }
+  );
+};
   // STEP 4
   window.showPic = (num) => {
     document.getElementById("pic1").classList.add("hidden");
