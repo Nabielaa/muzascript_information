@@ -94,3 +94,9 @@ footer {
   opacity: 0.6;
   padding: 20px;
 }
+
+  .ghost-text {
+  margin-top: 20px;
+  font-size: 16px;
+  opacity: 0.85;
+  }
