@@ -1,3 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #0b0b15, #050505);
+  color: #eaeaea;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
 /* ===== HERO BUTTON FINAL ===== */
 
 .hero-buttons {
@@ -368,3 +376,27 @@ section,
 footer {
   display: none;
 }
+
+.typing::after {
+  content: "|";
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+nav {
+  background: transparent;
+  color: white;
+}
+
+nav a {
+  color: #cfcfcf;
+}
+
+  .section {
+  background: transparent;
+  }
