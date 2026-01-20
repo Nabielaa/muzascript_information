@@ -1,28 +1,70 @@
-const text = "Hello! welcome to muzascript website";
 const typingText = document.getElementById("typingText");
+const introButtons = document.getElementById("introButtons");
+const infoButtons = document.getElementById("infoButtons");
+const socialButtons = document.getElementById("socialButtons");
 
-let i = 0;
-let speed = 40;
+const intro = document.getElementById("intro");
 
-function typeText() {
-  if (i < text.length) {
-    typingText.textContent += text.charAt(i);
+let speed = 30;
+
+function typeText(text, callback) {
+  typingText.innerHTML = "";
+  let i = 0;
+
+  const interval = setInterval(() => {
+    typingText.innerHTML += text.charAt(i);
     i++;
-    setTimeout(typeText, speed);
-  }
-}
-typeText();
-
-function showAbout() {
-  document.getElementById("about").style.display = "block";
+    if (i >= text.length) {
+      clearInterval(interval);
+      if (callback) callback();
+    }
+  }, speed);
 }
 
-function goToSocial() {
-  document.getElementById("page1").classList.remove("show");
-  document.getElementById("page2").classList.add("show");
+/* STEP 1 */
+typeText(
+  "Hello! welcome to muzascript website",
+  () => introButtons.classList.remove("hidden")
+);
+
+/* STEP 2 */
+function goAbout() {
+  introButtons.classList.add("hidden");
+  typeText(
+    "Hii? Want to know more about muzascript?\n press the button below",
+    () => infoButtons.classList.remove("hidden")
+  );
 }
 
-function goBack() {
-  document.getElementById("page2").classList.remove("show");
-  document.getElementById("page1").classList.add("show");
+/* STEP 3 */
+function goInformation() {
+  infoButtons.classList.add("hidden");
+  typeText(
+`About MuzaScript MuzaScript is a Roblox script development project from Indonesia. Focusing on Roblox Scripts and Script Showcase. 
+MuzaScript provides a Discord forum. To see Muzascript's social media, you can press the button below.`,
+    () => socialButtons.classList.remove("hidden")
+  );
+}
+
+/* STEP 4 */
+function goSocial() {
+  introButtons.classList.add("hidden");
+  socialButtons.classList.remove("hidden");
+}
+
+/* FINAL */
+function showSocial() {
+  intro.style.display = "none";
+
+  document.querySelector("nav").style.display = "block";
+  document.querySelector("header").style.display = "block";
+  document.querySelectorAll("section").forEach(s => s.style.display = "block");
+  document.querySelector("footer").style.display = "block";
+
+  document.getElementById("social").scrollIntoView({ behavior: "smooth" });
+}
+
+/* scroll helper */
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
